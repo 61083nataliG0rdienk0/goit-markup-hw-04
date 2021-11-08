@@ -233,6 +233,10 @@ body {
 
 /*--чем мы занимаемся--*/
 
+.section-activities {
+  padding-bottom: 94px;
+}
+
 .activities-list {
   display: flex;
 }
@@ -310,8 +314,8 @@ body {
   background-color: var(--footer-color);
 }
 
-.footer-item {
-  margin-top: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .studio-light {
