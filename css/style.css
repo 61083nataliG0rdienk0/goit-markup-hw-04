@@ -74,17 +74,17 @@ body {
   align-items: center;
 }
 
-.logo-link {
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
 .header-logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   margin-right: 93px;
+}
+
+.header-logo.link {
+  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -148,45 +148,43 @@ body {
 
 /*--эффективные решения для вашего бизнеса--*/
 
-.order {
+.section-order {
   background-color: var(--order-color);
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
 }
 
 .order-text {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-left: 252px;
   align-items: center;
+  justify-content: center;
   color: var(--second-title-color);
-  width: 696px;
-  height: 120px;
+  margin-bottom: 30px;
 }
 
 .order-button {
+  display: block;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
+  justify-content: center;
   letter-spacing: 0.06em;
-  margin-top: 30px;
-  margin-left: 500px;
-  width: 200px;
   height: 50px;
   color: var(--second-title-color);
   background-color: var(--accent-color);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .order-text-button {
-  padding: 10px, 32px;
+  padding: 10px 32px;
 }
 
 .order-button:focus,
@@ -282,6 +280,7 @@ body {
 
 .team-item {
   background-color: var(--second-title-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
