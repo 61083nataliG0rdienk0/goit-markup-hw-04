@@ -141,30 +141,39 @@ body {
 .header-tel {
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
-.header-email::before {
+.email-icon {
   width: 16px;
-  margin-right: 10px;
-  background-image: url(../img/envelope-hover.png);
-  background-size: contain;
-  content: '';
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 12px;
 }
 
-.header-tel::before {
+.tel-icom {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
-  background-image: url(../img/Vector.png);
-  background-size: contain;
-  content: '';
-  background-repeat: no-repeat;
+}
+
+.tel-icom,
+.email-icon {
+  align-items: center;
+  fill: var(--primary-text-color);
+}
+
+.header-contacts:hover .tel-icom,
+.header-contacts:focus .tel-icom,
+.header-contacts:hover .email-icon,
+.header-contacts:focus .email-icon {
+  fill: var(--accent-color);
 }
 
 .header-contacts .menu-item + .menu-item {
   margin-left: 50px;
+}
+
+.menu-item .email-icon,
+.menu-item .tel-icom {
+  margin-right: 10px;
 }
 
 /*--эффективные решения для вашего бизнеса--*/
@@ -266,6 +275,11 @@ body {
   background: var(--background-color);
 }
 
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .features-text {
   font-weight: normal;
   font-size: 14px;
@@ -333,8 +347,7 @@ body {
 }
 
 .team-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-member {
@@ -386,6 +399,8 @@ body {
 
 .social-icon {
   fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
 
 .social-link:hover .social-icon,
@@ -433,7 +448,8 @@ body {
 }
 
 .client-item:hover,
-.client-item:focus {
+.client-item:focus,
+.client-item.current {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
@@ -445,6 +461,8 @@ body {
 
 .client-icon {
   fill: #afb1b8;
+  width: 106px;
+  height: 60px;
 }
 
 /*--Футер--*/
@@ -552,6 +570,8 @@ body {
 
 .footer-social-icon {
   fill: var(--second-title-color);
+  width: 20px;
+  height: 20px;
 }
 
 /*-----------projects-----------*/
@@ -603,6 +623,11 @@ body {
   padding: 6px 22px;
 }
 
+.acсent-button {
+  background-color: var(--accent-color);
+  color: var(--second-title-color);
+}
+
 .button .current,
 .button:focus,
 .button:hover,
@@ -627,7 +652,8 @@ body {
   margin-bottom: 30px;
 }
 
-.projects-icons:hover {
+.projects-icons:hover,
+.projects-icons:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
