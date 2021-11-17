@@ -648,13 +648,14 @@ body {
 .projects-icons {
   width: 370px;
   height: 404px;
-  box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
 .projects-icons:hover,
-.projects-icons:focus {
+.projects-icons:focus,
+.projects-element:hover,
+.projects-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -667,13 +668,13 @@ body {
   margin-bottom: 0px;
 }
 
-.projects-element {
-  text-decoration: none;
-}
-
 .projects-content {
   padding: 20px 24px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+.projects-element {
+  text-decoration: none;
 }
