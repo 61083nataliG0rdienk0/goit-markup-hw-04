@@ -650,10 +650,14 @@ body {
   height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
+  display: flex;
 }
 
-.projects-icons:hover,
-.projects-icons:focus,
+.projects-element {
+  text-decoration: none;
+  display: block;
+}
+
 .projects-element:hover,
 .projects-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -673,8 +677,4 @@ body {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-}
-
-.projects-element {
-  text-decoration: none;
 }
