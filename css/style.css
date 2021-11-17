@@ -424,15 +424,11 @@ body {
 
 .clients-list {
   display: flex;
-  justify-content: center;
+  box-sizing: border-box;
 }
 
 .client-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+  justify-content: center;
 }
 
 .client-item:not(:last-child) {
@@ -440,29 +436,34 @@ body {
 }
 
 .client-link {
-  width: 100%;
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.client-item:hover,
-.client-item:focus,
-.client-item.current {
-  border: 1px solid var(--accent-color);
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: #afb1b8;
 }
 
-.client-item:hover .client-icon,
-.client-item:focus .client-icon {
+.client-link:hover,
+.client-link:focus,
+.client-link.current {
+  border-color: var(--accent-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
 .client-icon {
+  border-radius: 4px;
   fill: #afb1b8;
   width: 106px;
   height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--Футер--*/
@@ -664,6 +665,10 @@ body {
 
 .projects-icons:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.projects-element {
+  text-decoration: none;
 }
 
 .projects-content {
